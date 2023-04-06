@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Accueil La Bagarre</title>
 </head>
 <body>
-    
+    <!-- header avec icone du site, menu de navigation du site en dropdown, lien d'inscription, lien de connexion en dropdown -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <header class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/LogoSite.jpg" alt="logo de la bagarre" width="100px">
+                La Bagarre
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./agendaAVenir.html">A venir</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link active" href="/agendaPasse.html">passé</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Explorer
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./agendaAVenir.html" target="_blank">Tournois à venir</a></li>
+                        <li><a class="dropdown-item" href="./agendaPasse.html" target="_blank">Tournois passés</a></li>
+                        <li><a class="dropdown-item" href="./profilUtilisateur.html" target="_blank">Profil</a></li>
+                        <li><a class="dropdown-item" href="./inscription.html" target="_blank">Inscription</a></li>
+                        <li><a class="dropdown-item" href="./generationArbre.html" target="_blank">Générer un arbre</a></li>
+                        <li><a class="dropdown-item" href="./conditionEtNousContacter.html" target="_blank">Condition</a></li>
+                        <li><a class="dropdown-item" href="./conditionEtNousContacter.html#nousContacter" target="_blank">Nous contacter</a></li>
+                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./inscription.html">Inscription</a>
+                </li>
+            </ul>
+            <div class="btn-group dropstart">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    Connexion
+                </button>
+                <form class="dropdown-menu p-4">
+                    <div class="mb-3">
+                        <label for="login" class="form-label">Login</label>
+                        <input type="text" class="form-control" id="login" placeholder="ChuckNorris">
+                    </div>
+                    <div class="mb-3">
+                        <label for="motDePasse" class="form-label">Mot de passe</label>
+                        <input type="password" class="form-control" id="motDePasse" placeholder="Mot de passe">
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                            <label class="form-check-label" for="dropdownCheck2">
+                                Se souvenir de moi
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Connexion</button>
+                    </form>
+                </div>
+        </header>
+      </nav>
+
+    <!-- footer avec les liens sociaux, condition et nous contacter -->
+    <footer class="d-flex justify-content-between">
+        <div>
+            Copyright ©
+        </div>
+        <div>
+            <a href="./conditionEtNousContacter.html">Condition d'utilisation</a>
+            <a href="./conditionEtNousContacter.html#nousContacter">Nous contacter</a>
+        </div>
+        <div>
+            <i class="bi bi-meta"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-twitch"></i>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
