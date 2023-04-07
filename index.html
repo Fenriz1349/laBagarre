@@ -25,18 +25,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./agendaAVenir.html">A venir</a>
+                    <a class="nav-link active" aria-current="page" href="./agenda.html">A venir</a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link active" href="/agendaPasse.html">passé</a>
+                     <a class="nav-link active" href="./agenda.html#carouselagendapasse">passé</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Explorer
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./agendaAVenir.html" target="_blank">Tournois à venir</a></li>
-                        <li><a class="dropdown-item" href="./agendaPasse.html" target="_blank">Tournois passés</a></li>
+                        <li><a class="dropdown-item" href="./agenda.html" target="_blank">Tournois à venir</a></li>
+                        <li><a class="dropdown-item" href="./agenda.html#carouselagendapasse" target="_blank">Tournois passés</a></li>
                         <li><a class="dropdown-item" href="./profilUtilisateur.html" target="_blank">Profil</a></li>
                         <li><a class="dropdown-item" href="./inscription.html" target="_blank">Inscription</a></li>
                         <li><a class="dropdown-item" href="./generationArbre.html" target="_blank">Générer un arbre</a></li>
@@ -44,23 +44,50 @@
                         <li><a class="dropdown-item" href="./conditionEtNousContacter.html#nousContacter" target="_blank">Nous contacter</a></li>
                      </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./inscription.html">Inscription</a>
-                </li>
             </ul>
+            <!-- bouton inscription -->
             <div class="btn-group dropstart">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    Inscription
+                </button>
+                <form class="dropdown-menu px-5 bg-primary-subtle" method="get"action="./inscription.html">
+                    <div class="form-floating mb-2" style="width: 200px">
+                        <input type="text" class="form-control" id="login">
+                        <label for="login">Login :</label>
+                    </div>
+                    <div class="form-floating mb-2" style="width: 200px">
+                        <input type="email" class="form-control" id="mail" >
+                        <label for="login">e-mail :</label>
+                    </div>
+                    <div class="form-floating mb-2" style="width: 200px">
+                        <input type="password" class="form-control" id="mdp">
+                        <label for="mdp">Mot de passe :</label>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="radio" value="ChuckNorris" name="genre">
+                            <label for="ChuckNorris">Homme</label> <br>
+                            <input type="radio" value="ChuckNorris" name="genre">
+                            <label for="ChuckNorris">femme</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Inscription</button>
+                    <input type="reset" class="btn btn-secondary" value="reset">
+                </form>
+                <!-- bouton connexion -->
                 <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                     Connexion
                 </button>
-                <form class="dropdown-menu p-4">
-                    <div class="mb-3">
-                        <label for="login" class="form-label">Login</label>
-                        <input type="text" class="form-control" id="login" placeholder="ChuckNorris">
-                    </div>
-                    <div class="mb-3">
-                        <label for="motDePasse" class="form-label">Mot de passe</label>
-                        <input type="password" class="form-control" id="motDePasse" placeholder="Mot de passe">
-                    </div>
+                <form class="dropdown-menu px-5 bg-primary-subtle" method="get"action="./accueilconnecte.html">
+                    <div class="form-floating mb-3" style="width: 200px">
+                        <input type="text" class="form-control" id="floatingLogin" placeholder="Chuck Norris">
+                        <label for="floatingLogin">Login</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                    pas encore membre?<a href="#inscription">inscription</a>
                     <div class="mb-3">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="dropdownCheck2">
